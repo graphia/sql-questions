@@ -1,6 +1,6 @@
 drop table if exists appearance;
 
-create type medal as enum ('Gold', 'Silver', 'Bronze');
+create type medal as enum ('Bronze', 'Silver', 'Gold');
 
 create table appearance (
 	athlete_id integer not null references athlete(id),
